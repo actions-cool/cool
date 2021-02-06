@@ -1,9 +1,0 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
-}

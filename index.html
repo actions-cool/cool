@@ -3,13 +3,101 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>Cool</title>
+    <title>Actions Cool</title>
     <link rel="icon" href="https://github.com/actions-cool/resources/blob/main/logo/cool-icon.png?raw=true">
-
-    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <script>window.routerBase = "/";</script>
+    <script src="./assets/actions.js"></script>
   </head>
 
   <body>
+    <header style="background-color: #000; height: 50px;">
+      <a href="https://github.com/actions-cool/cool" target="_blank" style="color: #f9f002; font-size: 2rem;">Github
+      </a>
+    </header>
 
+    <section class="cyberpunk">
+      <div class="douyin-style">
+        <div class="douyin-style-font">
+          <div class="douyin-style-title" data-title="ACTIONS COOL">
+            <span>ACTIONS COOL</span>
+          </div>
+        </div>
+        <div class="douyin-style-font shake" style="--shake-offset: -2px; --shake-height: 20px;--shake-delay:0s;">
+          <div class="douyin-style-title" data-title="ACTIONS COOL">
+            <span>ACTIONS COOL</span>
+          </div>
+        </div>
+        <div class="douyin-style-font shake" style="--shake-offset: -3px; --shake-height: 2px;--shake-delay:0。2s;">
+          <div class="douyin-style-title" data-title="ACTIONS COOL">
+            <span>ACTIONS COOL</span>
+          </div>
+        </div>
+        <div class="douyin-style-font shake" style="--shake-offset: -5px; --shake-height: 10px;--shake-delay:0.1s;">
+          <div class="douyin-style-title" data-title="ACTIONS COOL">
+            <span>ACTIONS COOL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cyberpunk black" style="padding-top: 10px;">
+      <h1 class="actions">Actions</h1>
+      <div id="actions-list">
+      </div>
+    </section>
+
+    <section class="cyberpunk" style="padding-top: 10px;">
+      <h1 class="tools glitched">Tools</h1>
+      <div id="tools-list">
+      </div>
+    </section>
+
+    <section class="cyberpunk black" style="padding-top: 10px;">
+      <h1 class="aides">Aide</h1>
+      <div id="aides-list">
+        <ul class="aide">
+          <li><a href="https://github.com/actions-cool/action-tutorial" target="_blank">action-tutorial</a>🔥 Action 教程</li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <script>
+      var actionHtml = '';
+      const colors = ['', 'green', 'purple', 'blue'];
+      const speed = ['none', '', 'none', 'slow', 'fast'];
+      cool.actions.forEach((action,index) => {
+        actionHtml += `<div class="action">
+          <a class="cyberpunk2077 ${colors[index%4]}" href="${action.url}" target="_blank" style="--star: ${action.star}">${action.name}_</a>
+          <div class="cyberpunk glitched">
+            <a href="${action.market}" target="_blank">${action.tag}</a><br/>
+            <p class="${speed[index%4]}">${action.desc}</p>
+          </div>
+        </div>`
+      });
+      document.getElementById('actions-list').innerHTML = actionHtml;
+
+      var toolHtml = '';
+      const scans = ['scandh', 'scandv'];
+      cool.tools.forEach((tool,index) => {
+        toolHtml += `<a href="${tool.url}" target="_blank" class="tool ${index%2==0?'scandh':'dotted scandv'}">
+          <h2>${tool.name}_</h2> 
+          <p>${tool.desc}</p>
+        </a>`
+      });
+      document.getElementById('tools-list').innerHTML = toolHtml;
+
+      var aideHtml = '';
+      const scans = ['scandh', 'scandv'];
+      cool.tools.forEach((tool,index) => {
+        toolHtml += `<a href="${tool.url}" target="_blank" class="tool ${index%2==0?'scandh':'dotted scandv'}">
+          <h2>${tool.name}_</h2> 
+          <p>${tool.desc}</p>
+        </a>`
+      });
+      document.getElementById('tools-list').innerHTML = toolHtml;
+    </script>
   </body>
 </html>
