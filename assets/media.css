@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1200px) {
+  .tool {
+    width: 100%;
+  }
+
+  a.cyberpunk2077 {
+    font-size: 1.4rem;
+    width: calc(100% - 40px);
+    padding: 20px 0 20px 40px;
+  }
+
+  .douyin-style {
+    margin-left: 0;
+  }
+  .douyin-style-font {
+    font-size: 3rem;
+    width: 380px;
+  }
+
+  .action {
+    display: block;
+  }
+
+  .action p,
+  .action a {
+    white-space: break-spaces;
+  }
+
+  .action p {
+    margin-top: 10px;
+  }
+
+  .aide li {
+    display: grid;
+  }
+
+  .aide a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

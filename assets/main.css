@@ -17,14 +17,24 @@
   --neon-color: #39ff14;
 }
 
+html {
+  width: 100vw;
+}
+
 body {
+  width: 100vw;
   min-height: 100vh;
   background: #000;
   font-family: "Advent Pro", arial;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Title */
-
 h1 {
   font-size: 3rem;
   line-height: 3.4rem;
@@ -179,7 +189,7 @@ a.cyberpunk2077:focus {
   animation-name: buttonhover;
   animation-duration: var(--glitched-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 a.cyberpunk2077:before {
@@ -196,6 +206,7 @@ a.cyberpunk2077:before {
   border-right: 2px solid var(--border-color);
 }
 
+a.cyberpunk2077.hover:before,
 a.cyberpunk2077:hover:before,
 a.cyberpunk2077:focus:before {
   display: block;
@@ -220,6 +231,7 @@ a.cyberpunk2077:after {
   border-left: 2px solid var(--border-color);
 }
 
+a.cyberpunk2077.hover:after,
 a.cyberpunk2077:hover:after,
 a.cyberpunk2077:focus:after {
   animation-name: buttonhoverafter;
@@ -393,7 +405,7 @@ div.cyberpunk a:hover:after {
   animation-name: scanneda;
   animation-duration: var(--glitched-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
   animation-direction: alternate;
 }
 
@@ -414,12 +426,12 @@ div.cyberpunk.glitched p.none {
 
 div.cyberpunk.glitched p.slow {
   animation-duration: calc(var(--glitched-duration) * 1.5);
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
 }
 
 div.cyberpunk.glitched p.fast {
   animation-duration: calc(var(--glitched-duration) * 0.8);
-  animation-timing-function: ease-in; 
+  animation-timing-function: ease-in;
 }
 
 @keyframes scanneda {
@@ -470,6 +482,7 @@ section.cyberpunk {
   background-color: var(--yellow-color);
   color: #000;
   padding: 40px 60px;
+  width: calc(100% - 120px);
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -734,10 +747,11 @@ h1.aides:before {
 .aide {
   font-size: 1.2rem;
   position: relative;
+  padding: 10px 0;
 }
 
 .aide li {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .aide a {
@@ -750,8 +764,12 @@ h1.aides:before {
   margin-right: 20px;
   border: 2px solid var(--border-color);
   box-shadow: 0px 0px 8px 3px var(--border-color);
+  transition: box-shadow 0.3s ease-in;
 }
 
+.aide a:hover {
+  box-shadow: 0px 0px 10px 5px var(--border-color);
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {

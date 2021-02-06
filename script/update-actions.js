@@ -50,7 +50,7 @@ async function main() {
     })
   }
   actions.sort((a, b) => b.star - a.star);
-  
+
   let tools = [];
   for await (let tool of TOOLS) {
     const { data: repo } = await octokit.repos.get({
@@ -75,7 +75,7 @@ async function main() {
     aides.push({
       name: aide,
       url: repo.html_url,
-      desc: repo.description,
+      desc: dealDesc(repo.description),
     })
   }
 
@@ -88,5 +88,10 @@ async function main() {
   const write = `const cool = ${JSON.stringify(cool)};`;
   fs.writeFileSync('./assets/actions.js', write);
 };
+
+function dealDesc(desc) {
+  const arr = desc.split('https');
+  return arr[0];
+}
 
 main();
