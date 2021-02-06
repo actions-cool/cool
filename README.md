@@ -1,8 +1,5 @@
 # 😎 Cool
 
-[![](https://img.shields.io/github/stars/actions-cool/cool?style=flat-square)](https://github.com/actions-cool/cool/stargazers)
-<img src="http://hits.dwyl.com/actions-cool/cool.svg" />
-
 Cool is over. 酷就完事了。A cool website showcases actions-cool products.
 
 ## Preview
