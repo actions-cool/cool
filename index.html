@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>Actions Cool</title>
-    <link rel="icon" href="https://github.com/actions-cool/resources/blob/main/logo/cool-icon.png?raw=true">
+    <link rel="icon" href="assets/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/media.css">
@@ -98,8 +98,8 @@
       document.getElementById('tools-list').innerHTML = toolHtml;
 
       var aideHtml = '';
-      cool.aides.forEach(aide => {
-        aideHtml += `<li><a href="${aide.url}" target="_blank">${aide.name}</a>${aide.desc}</li>`
+      cool.aides.forEach((aide,index) => {
+        aideHtml += `<li><a href="${aide.url}" target="_blank" class="${index%2==0?'breathe':''} ${index==0?'duration':''}">${aide.name}</a>${aide.desc}</li>`
       });
       document.getElementById('aides-list').innerHTML = `<ul class="aide">${aideHtml}</ul>`;
     </script>
