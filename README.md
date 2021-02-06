@@ -8,7 +8,7 @@ https://actions-cool.github.io/cool/
 
 ## Description
 
-- The displayed data is not real-time, updated daily by GitHub actions.
+- The displayed data is not real-time, updated daily by GitHub actions
 - The css style is mostly inspired by [gwannon/Cyberpunk-2077-theme-css](https://github.com/gwannon/Cyberpunk-2077-theme-css)
 
 ## LICENSE
