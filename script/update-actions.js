@@ -81,7 +81,7 @@ async function main() {
       star: repo.stargazers_count,
     })
   }
-  aides.sort((a, b) => b.name.length - a.name.length);
+  aides.sort((a, b) => a.name.length - b.name.length);
 
   const cool = {
     actions,
