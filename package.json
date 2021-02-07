@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "main": "node ./script/main.js"
+  },
   "dependencies": {
     "@octokit/rest": "^18.1.0",
     "dotenv": "^8.2.0"
