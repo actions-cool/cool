@@ -21,6 +21,7 @@ const TOOLS = [
 const AIDES = [
   'action-tutorial',
   'octokit-rest',
+  '.github',
   'action-ts-template',
   'action-js-template',
 ];
@@ -62,6 +63,7 @@ async function main() {
       name: tool,
       url: repo.html_url,
       desc: repo.description,
+      star: repo.stargazers_count,
     })
   }
 
@@ -76,6 +78,7 @@ async function main() {
       name: aide,
       url: repo.html_url,
       desc: dealDesc(repo.description),
+      star: repo.stargazers_count,
     })
   }
 
