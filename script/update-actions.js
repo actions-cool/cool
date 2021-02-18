@@ -8,9 +8,11 @@ const octokit = new Octokit({ auth: `token ${githubToken}` });
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const ACTIONS = [
   'issues-helper',
-  'pr-welcome',
-  'verify-package-version',
   'release-helper',
+  'pr-welcome',
+  'maintain-one-comment',
+  'verify-package-version',
+  'verify-files-modify',
 ];
 
 const TOOLS = [
@@ -24,6 +26,7 @@ const AIDES = [
   '.github',
   'action-ts-template',
   'action-js-template',
+  'test-ci-version',
 ];
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
