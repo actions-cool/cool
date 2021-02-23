@@ -9,7 +9,9 @@ const octokit = new Octokit({ auth: `token ${githubToken}` });
 const ACTIONS = [
   'issues-helper',
   'release-helper',
+  'translation-helper',
   'pr-welcome',
+  'check-pr-ci',
   'maintain-one-comment',
   'verify-package-version',
   'verify-files-modify',
@@ -17,7 +19,9 @@ const ACTIONS = [
 
 const TOOLS = [
   'labels-helper',
+  'actions-util',
   'analyze-action',
+  'github-action-branding',
 ];
 
 const AIDES = [
