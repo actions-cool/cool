@@ -12,6 +12,7 @@ const ACTIONS = [
   'translation-helper',
   'pr-welcome',
   'check-pr-ci',
+  'check-user-permission',
   'maintain-one-comment',
   'verify-package-version',
   'verify-files-modify',
