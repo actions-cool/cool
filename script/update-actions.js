@@ -11,6 +11,7 @@ const ACTIONS = [
   'release-helper',
   'translation-helper',
   'pr-welcome',
+  'pr-extract-issues',
   'check-pr-ci',
   'check-user-permission',
   'maintain-one-comment',
