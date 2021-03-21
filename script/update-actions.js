@@ -8,9 +8,11 @@ const octokit = new Octokit({ auth: `token ${githubToken}` });
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const ACTIONS = [
   'issues-helper',
+  'issues-similarity-analysis',
   'release-helper',
   'translation-helper',
   'pr-welcome',
+  'pr-check-fill',
   'pr-extract-issues',
   'check-pr-ci',
   'check-user-permission',
