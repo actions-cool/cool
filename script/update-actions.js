@@ -12,6 +12,7 @@ const ACTIONS = [
   'release-helper',
   'translation-helper',
   'contributor-helper',
+  'emoji-helper',
   'star-helper',
   'pr-welcome',
   'pr-check-fill',
