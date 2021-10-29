@@ -17,6 +17,7 @@ const ACTIONS = [
   'pr-welcome',
   'pr-check-fill',
   'pr-extract-issues',
+  'pr-auto-label',
   'ci-notice',
   'check-pr-ci',
   'check-user-permission',
