@@ -21,6 +21,7 @@ const ACTIONS = [
   'ci-notice',
   'check-pr-ci',
   'check-user-permission',
+  'check-issue-ref',
   'maintain-one-comment',
   'verify-package-version',
   'verify-files-modify',
